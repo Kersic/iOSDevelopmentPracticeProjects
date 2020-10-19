@@ -11,7 +11,7 @@
         <!--Daily Journal-->
         <scene sceneID="PF8-kG-CAH">
             <objects>
-                <tableViewController id="daR-SX-MdS" sceneMemberID="viewController">
+                <tableViewController id="daR-SX-MdS" customClass="EntriesTableViewController" customModule="Daily_Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="420-uH-rqf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,18 +44,18 @@
             </objects>
             <point key="canvasLocation" x="771.01449275362324" y="64.955357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="nRQ-4L-aSw">
             <objects>
-                <viewController id="vQS-Ke-qza" sceneMemberID="viewController">
+                <viewController id="vQS-Ke-qza" customClass="EntryViewController" customModule="Daily_Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="skr-75-GON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="mw8-t3-hQd">
-                                <rect key="frame" x="20" y="108" width="468" height="216"/>
+                                <rect key="frame" x="20" y="108" width="374" height="216"/>
                             </datePicker>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-7c-e5N">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-1s-hq6">
                                 <rect key="frame" x="20" y="344" width="374" height="498"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -67,18 +67,22 @@
                         <viewLayoutGuide key="safeArea" id="gVT-qM-1EW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gVT-qM-1EW" firstAttribute="trailing" secondItem="jIc-7c-e5N" secondAttribute="trailing" constant="20" id="9dQ-x9-7Sn"/>
+                            <constraint firstItem="wfK-1s-hq6" firstAttribute="leading" secondItem="gVT-qM-1EW" secondAttribute="leading" constant="20" id="79e-Nu-TVY"/>
                             <constraint firstItem="mw8-t3-hQd" firstAttribute="top" secondItem="gVT-qM-1EW" secondAttribute="top" constant="20" id="DWd-Y2-jfE"/>
-                            <constraint firstItem="jIc-7c-e5N" firstAttribute="top" secondItem="mw8-t3-hQd" secondAttribute="bottom" constant="20" id="GAy-9n-VfK"/>
-                            <constraint firstItem="gVT-qM-1EW" firstAttribute="bottom" secondItem="jIc-7c-e5N" secondAttribute="bottom" constant="20" id="TFm-bV-xMM"/>
+                            <constraint firstItem="gVT-qM-1EW" firstAttribute="trailing" secondItem="wfK-1s-hq6" secondAttribute="trailing" constant="20" id="Xvs-ZM-ifC"/>
+                            <constraint firstItem="gVT-qM-1EW" firstAttribute="bottom" secondItem="wfK-1s-hq6" secondAttribute="bottom" constant="20" id="bIe-ll-MEC"/>
                             <constraint firstItem="gVT-qM-1EW" firstAttribute="trailing" secondItem="mw8-t3-hQd" secondAttribute="trailing" constant="20" id="gpd-te-iuu"/>
-                            <constraint firstItem="jIc-7c-e5N" firstAttribute="leading" secondItem="gVT-qM-1EW" secondAttribute="leading" constant="20" id="nyG-UU-qzu"/>
+                            <constraint firstItem="wfK-1s-hq6" firstAttribute="top" secondItem="mw8-t3-hQd" secondAttribute="bottom" constant="20" id="nxA-pU-8w9"/>
                             <constraint firstItem="mw8-t3-hQd" firstAttribute="leading" secondItem="gVT-qM-1EW" secondAttribute="leading" constant="20" id="sOr-9m-V8Y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tEV-Hm-m3p">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="trash" id="tzU-wa-gOu"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="mw8-t3-hQd" id="ymf-ix-KQj"/>
+                        <outlet property="entryTextView" destination="wfK-1s-hq6" id="gmE-hg-bIZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODZ-Bc-ZWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
