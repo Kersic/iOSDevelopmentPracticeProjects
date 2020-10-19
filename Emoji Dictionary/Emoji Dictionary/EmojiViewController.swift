@@ -12,13 +12,13 @@ class EmojiViewController: UIViewController {
     @IBOutlet weak var EmojiIcon: UILabel!
     @IBOutlet weak var EmojiDescription: UILabel!
     
-    var emoji = "😍"
+    var emoji: Emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        EmojiIcon.text = emoji
-        EmojiDescription.text = emoji.unicodeScalars.first!.properties.name!.capitalized
+        EmojiIcon.text = emoji.character
+        EmojiDescription.text = emoji.description
     
     }
       

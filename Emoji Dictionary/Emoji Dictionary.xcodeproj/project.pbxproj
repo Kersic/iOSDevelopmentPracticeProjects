@@ -16,6 +16,7 @@
 		0F990E1825385C1D0056BBDD /* Emoji_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F990E1725385C1D0056BBDD /* Emoji_DictionaryTests.swift */; };
 		0F990E2325385C1D0056BBDD /* Emoji_DictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F990E2225385C1D0056BBDD /* Emoji_DictionaryUITests.swift */; };
 		0F990E3725385EEB0056BBDD /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F990E3625385EEB0056BBDD /* EmojiTableViewController.swift */; };
+		0F9F3ADA253DB38C003EABE8 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F3AD9253DB38C003EABE8 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0F990E2225385C1D0056BBDD /* Emoji_DictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_DictionaryUITests.swift; sourceTree = "<group>"; };
 		0F990E2425385C1D0056BBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F990E3625385EEB0056BBDD /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		0F9F3AD9253DB38C003EABE8 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				0F990E0925385C1D0056BBDD /* Assets.xcassets */,
 				0F990E0B25385C1D0056BBDD /* LaunchScreen.storyboard */,
 				0F990E0E25385C1D0056BBDD /* Info.plist */,
+				0F9F3AD9253DB38C003EABE8 /* Emoji.swift */,
 			);
 			path = "Emoji Dictionary";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9F3ADA253DB38C003EABE8 /* Emoji.swift in Sources */,
 				0F990E0125385C1C0056BBDD /* AppDelegate.swift in Sources */,
 				0F990E3725385EEB0056BBDD /* EmojiTableViewController.swift in Sources */,
 				0F990E0325385C1C0056BBDD /* SceneDelegate.swift in Sources */,

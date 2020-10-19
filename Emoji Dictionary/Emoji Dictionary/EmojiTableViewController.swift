@@ -9,7 +9,7 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
 
-    let emojis = ["😃", "🤪", "🤬", "🧐", "😱", "😎", "🙃", "🤩", "🤯", "😇", "😍", "🥺", "🤗", "🥶", "😬", "😵", "🤠", "🤐", "🤥", "😷", "🤒", "🥳", "😉", "😝", "😴"]
+    let emojis = getEmojis()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class EmojiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 
-        cell.textLabel?.text = "\(emojis[indexPath.row]) \(emojis[indexPath.row].unicodeScalars.first!.properties.name!.capitalized)"
+        cell.textLabel?.text = "\(emojis[indexPath.row].character) \(emojis[indexPath.row].description)"
 
         return cell
     }
@@ -39,9 +39,11 @@ class EmojiTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let definitionVC = segue.destination as! EmojiViewController
-        let selectdEmoji = sender as! String
-        definitionVC.emoji = selectdEmoji
+        if let definitionVC = segue.destination as? EmojiViewController {
+            if let selectdEmoji = sender as? Emoji {
+                definitionVC.emoji = selectdEmoji
+            }
+        }
     }
 
 }
