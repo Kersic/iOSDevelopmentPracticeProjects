@@ -19,11 +19,11 @@ class EntryViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        let entry = Entry()
-        entry.date = datePicker.date
-        entry.text = entryTextView.text
-        
-        entriesVC?.entries.append(entry)
-        entriesVC?.tableView.reloadData()
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let entry = Entry(context: context)
+            entry.date = datePicker.date
+            entry.text = entryTextView.text
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        }
     }
 }
