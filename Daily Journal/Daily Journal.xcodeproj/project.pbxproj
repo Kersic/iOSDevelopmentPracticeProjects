@@ -13,9 +13,10 @@
 		0FB67509253DB7E5005C8488 /* Daily_Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FB67507253DB7E5005C8488 /* Daily_Journal.xcdatamodeld */; };
 		0FB6750B253DB7E6005C8488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6750A253DB7E6005C8488 /* Assets.xcassets */; };
 		0FB6750E253DB7E6005C8488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6750C253DB7E6005C8488 /* LaunchScreen.storyboard */; };
-		0FB67517253DC046005C8488 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB67516253DC046005C8488 /* Entry.swift */; };
 		0FB6751C253DC1AB005C8488 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6751B253DC1AB005C8488 /* EntriesTableViewController.swift */; };
 		0FB67520253DC251005C8488 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6751F253DC251005C8488 /* EntryViewController.swift */; };
+		0FB67526253DCE03005C8488 /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB67524253DCE03005C8488 /* Entry+CoreDataClass.swift */; };
+		0FB67527253DCE03005C8488 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB67525253DCE03005C8488 /* Entry+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		0FB6750A253DB7E6005C8488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FB6750D253DB7E6005C8488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FB6750F253DB7E6005C8488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FB67516253DC046005C8488 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		0FB6751B253DC1AB005C8488 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		0FB6751F253DC251005C8488 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		0FB67524253DCE03005C8488 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0FB67525253DCE03005C8488 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,10 @@
 			children = (
 				0FB674FE253DB7E5005C8488 /* AppDelegate.swift */,
 				0FB67500253DB7E5005C8488 /* SceneDelegate.swift */,
-				0FB67516253DC046005C8488 /* Entry.swift */,
 				0FB6751B253DC1AB005C8488 /* EntriesTableViewController.swift */,
 				0FB6751F253DC251005C8488 /* EntryViewController.swift */,
+				0FB67524253DCE03005C8488 /* Entry+CoreDataClass.swift */,
+				0FB67525253DCE03005C8488 /* Entry+CoreDataProperties.swift */,
 				0FB67504253DB7E5005C8488 /* Main.storyboard */,
 				0FB6750A253DB7E6005C8488 /* Assets.xcassets */,
 				0FB6750C253DB7E6005C8488 /* LaunchScreen.storyboard */,
@@ -146,11 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FB67517253DC046005C8488 /* Entry.swift in Sources */,
 				0FB674FF253DB7E5005C8488 /* AppDelegate.swift in Sources */,
+				0FB67527253DCE03005C8488 /* Entry+CoreDataProperties.swift in Sources */,
 				0FB67501253DB7E5005C8488 /* SceneDelegate.swift in Sources */,
 				0FB67509253DB7E5005C8488 /* Daily_Journal.xcdatamodeld in Sources */,
 				0FB6751C253DC1AB005C8488 /* EntriesTableViewController.swift in Sources */,
+				0FB67526253DCE03005C8488 /* Entry+CoreDataClass.swift in Sources */,
 				0FB67520253DC251005C8488 /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
