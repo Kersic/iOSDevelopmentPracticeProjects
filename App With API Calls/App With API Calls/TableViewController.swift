@@ -13,17 +13,20 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getToDos()
+        getImages()
     }
     
-    func getToDos() {
-        if let url = URL(string: "https://jsonplaceholder.typicode.com/photos?_start=0&_limit=20") {
+    func getImages() {
+        if let url = URL(string: "https://picsum.photos/v2/list?page=2&limit=100") {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
+            print("get images")
             URLSession.shared.dataTask(with: request) {(data, response, error) in
                 if error != nil {
                     print("There was an error")
                 } else if (data != nil) {
+                    print("success")
+                    print(String(data:data!, encoding: .utf8))
                     if let imagesFromApi = try? JSONDecoder().decode([Image].self, from: data!) {
                         DispatchQueue.main.async {
                             self.images = imagesFromApi
@@ -43,9 +46,12 @@ class TableViewController: UITableViewController {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath)
         
         let image = images[indexPath.row]
-        cell.textLabel?.text = image.title
+        cell.textLabel?.text = image.author
         
         return cell
     }
 
+    @IBAction func reloadImages(_ sender: Any) {
+        getImages()
+    }
 }

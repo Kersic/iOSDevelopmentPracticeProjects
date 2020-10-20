@@ -8,17 +8,13 @@
 import Foundation
 
 class Image: Codable {
-    var id = 0
-    var album = 0
-    var title = ""
-    var imageUrl = ""
-    var thumbnailUrl = ""
+    var id = ""
+    var author = ""
+    var url = ""
     
     enum CodingKeys: String, CodingKey {
         case id
-        case album = "albumId"
-        case title
-        case imageUrl = "url"
-        case thumbnailUrl
+        case author
+        case url
     }
 }
