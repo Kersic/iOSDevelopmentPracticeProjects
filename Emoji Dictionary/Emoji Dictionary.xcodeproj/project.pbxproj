@@ -12,6 +12,7 @@
 		0F1978E4253F07FF00A40C4C /* EmojiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1978E3253F07FF00A40C4C /* EmojiWidget.swift */; };
 		0F1978E6253F080100A40C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1978E5253F080100A40C4C /* Assets.xcassets */; };
 		0F1978EA253F080100A40C4C /* EmojiWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0F1978DC253F07FF00A40C4C /* EmojiWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0F1978F3253F0ABD00A40C4C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F3AD9253DB38C003EABE8 /* Emoji.swift */; };
 		0F94F792253D89E500F98249 /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F791253D89E500F98249 /* EmojiViewController.swift */; };
 		0F990E0125385C1C0056BBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F990E0025385C1C0056BBDD /* AppDelegate.swift */; };
 		0F990E0325385C1C0056BBDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F990E0225385C1C0056BBDD /* SceneDelegate.swift */; };
@@ -358,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1978F3253F0ABD00A40C4C /* Emoji.swift in Sources */,
 				0F1978E4253F07FF00A40C4C /* EmojiWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

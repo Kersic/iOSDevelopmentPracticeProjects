@@ -10,11 +10,11 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+        SimpleEntry(date: Date(), emoji: getEmojis().randomElement()!)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+        let entry = SimpleEntry(date: Date(), emoji: getEmojis().randomElement()!)
         completion(entry)
     }
 
@@ -25,7 +25,7 @@ struct Provider: TimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
+            let entry = SimpleEntry(date: entryDate, emoji: getEmojis().randomElement()!)
             entries.append(entry)
         }
 
@@ -36,13 +36,17 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let emoji: Emoji
 }
 
 struct EmojiWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        VStack {
+            Text(entry.emoji.character).font(.system(size: 90))
+            Text(entry.emoji.description).multilineTextAlignment(.center)
+        }
     }
 }
 
@@ -54,14 +58,14 @@ struct EmojiWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             EmojiWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Emoji Dictionary")
+        .description("Displays a random Emoji every hour!")
     }
 }
 
 struct EmojiWidget_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiWidgetEntryView(entry: SimpleEntry(date: Date()))
+        EmojiWidgetEntryView(entry: SimpleEntry(date: Date(), emoji: getEmojis().randomElement()!))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
