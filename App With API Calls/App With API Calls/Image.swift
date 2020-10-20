@@ -15,6 +15,6 @@ class Image: Codable {
     enum CodingKeys: String, CodingKey {
         case id
         case author
-        case url
+        case url = "download_url"
     }
 }

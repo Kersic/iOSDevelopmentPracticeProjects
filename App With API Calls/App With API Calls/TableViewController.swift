@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TableViewController: UITableViewController {
     
@@ -17,7 +18,7 @@ class TableViewController: UITableViewController {
     }
     
     func getImages() {
-        if let url = URL(string: "https://picsum.photos/v2/list?page=2&limit=100") {
+        if let url = URL(string: "https://picsum.photos/v2/list?page=2&limit=20") {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
             URLSession.shared.dataTask(with: request) {(data, response, error) in
@@ -40,12 +41,18 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =  tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath)
-        
-       // let image = images[indexPath.row]
-       // cell.textLabel?.text = image.author
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as? ImageTableViewCell {
+            let image = images[indexPath.row]
+            cell.nameLabel.text = image.author
+            print(image.url)
+            if let url = URL(string: image.url) {
+                cell.imageContainer.kf.setImage(with: url)
+            }
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
