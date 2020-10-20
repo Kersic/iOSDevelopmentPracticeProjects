@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F54DFAE253EBEA7008F1BAB /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F54DFAD253EBEA7008F1BAB /* EntryTableViewCell.swift */; };
 		0FB674FF253DB7E5005C8488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB674FE253DB7E5005C8488 /* AppDelegate.swift */; };
 		0FB67501253DB7E5005C8488 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB67500253DB7E5005C8488 /* SceneDelegate.swift */; };
 		0FB67506253DB7E5005C8488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB67504253DB7E5005C8488 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F54DFAD253EBEA7008F1BAB /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		0FB674FB253DB7E5005C8488 /* Daily Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB674FE253DB7E5005C8488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FB67500253DB7E5005C8488 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				0FB674FE253DB7E5005C8488 /* AppDelegate.swift */,
 				0FB67500253DB7E5005C8488 /* SceneDelegate.swift */,
 				0FB6751B253DC1AB005C8488 /* EntriesTableViewController.swift */,
+				0F54DFAD253EBEA7008F1BAB /* EntryTableViewCell.swift */,
 				0FB6751F253DC251005C8488 /* EntryViewController.swift */,
 				0FB67524253DCE03005C8488 /* Entry+CoreDataClass.swift */,
 				0FB67525253DCE03005C8488 /* Entry+CoreDataProperties.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F54DFAE253EBEA7008F1BAB /* EntryTableViewCell.swift in Sources */,
 				0FB674FF253DB7E5005C8488 /* AppDelegate.swift in Sources */,
 				0FB67527253DCE03005C8488 /* Entry+CoreDataProperties.swift in Sources */,
 				0FB67501253DB7E5005C8488 /* SceneDelegate.swift in Sources */,

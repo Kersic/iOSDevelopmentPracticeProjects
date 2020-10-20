@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCell" rowHeight="100" id="pGd-mD-zPL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCell" rowHeight="100" id="pGd-mD-zPL" customClass="EntryTableViewCell" customModule="Daily_Journal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pGd-mD-zPL" id="Lnd-La-aOT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCi-pV-cz5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCi-pV-cz5">
                                             <rect key="frame" x="20" y="11" width="72" height="41"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="8Wn-JG-yeU"/>
@@ -33,8 +33,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-U2-5Sd">
-                                            <rect key="frame" x="36.5" y="59" width="39" height="41"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-U2-5Sd">
+                                            <rect key="frame" x="36.5" y="49" width="39" height="41"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="textColor" systemColor="systemRedColor"/>
                                             <nil key="highlightedColor"/>
@@ -54,9 +54,14 @@
                                         <constraint firstItem="LdX-tX-AXW" firstAttribute="leading" secondItem="HCi-pV-cz5" secondAttribute="trailing" constant="20" id="aDY-jO-W29"/>
                                         <constraint firstItem="NMj-U2-5Sd" firstAttribute="centerX" secondItem="HCi-pV-cz5" secondAttribute="centerX" id="t7c-nw-cXu"/>
                                         <constraint firstItem="LdX-tX-AXW" firstAttribute="top" secondItem="Lnd-La-aOT" secondAttribute="topMargin" id="xBM-cn-jqf"/>
-                                        <constraint firstAttribute="bottom" secondItem="NMj-U2-5Sd" secondAttribute="bottom" id="zb9-Pp-52Z"/>
+                                        <constraint firstAttribute="bottom" secondItem="NMj-U2-5Sd" secondAttribute="bottom" constant="10" id="zb9-Pp-52Z"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dayLabel" destination="NMj-U2-5Sd" id="i7w-iJ-CR9"/>
+                                    <outlet property="entryTextLabel" destination="LdX-tX-AXW" id="gU2-1b-xGD"/>
+                                    <outlet property="monthLabel" destination="HCi-pV-cz5" id="M5P-Vv-NDj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
