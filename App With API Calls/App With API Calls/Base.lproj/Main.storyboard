@@ -16,12 +16,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="312" id="xkr-iJ-xnb">
-                                <rect key="frame" x="0.0" y="28" width="414" height="312"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="330" id="xkr-iJ-xnb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="330"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xkr-iJ-xnb" id="MlF-M3-E0F">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="312"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ime in priimek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPb-e6-8FE">
+                                            <rect key="frame" x="20" y="298" width="374" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unsplash_523ae1f5502d6_1" translatesAutoresizingMaskIntoConstraints="NO" id="f42-aT-vOn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="290"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="290" id="peQ-he-PFK"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cPb-e6-8FE" secondAttribute="trailing" id="5bA-EI-pOv"/>
+                                        <constraint firstItem="cPb-e6-8FE" firstAttribute="leading" secondItem="MlF-M3-E0F" secondAttribute="leadingMargin" id="Q3q-5v-YNl"/>
+                                        <constraint firstAttribute="trailing" secondItem="f42-aT-vOn" secondAttribute="trailing" id="Y0e-7C-Yek"/>
+                                        <constraint firstItem="f42-aT-vOn" firstAttribute="top" secondItem="MlF-M3-E0F" secondAttribute="top" id="cpH-Uw-fgM"/>
+                                        <constraint firstItem="cPb-e6-8FE" firstAttribute="bottom" secondItem="MlF-M3-E0F" secondAttribute="bottomMargin" id="dIe-xv-NU7"/>
+                                        <constraint firstItem="f42-aT-vOn" firstAttribute="leading" secondItem="MlF-M3-E0F" secondAttribute="leading" id="m6e-Gb-gj6"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -62,6 +84,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="unsplash_523ae1f5502d6_1" width="1950" height="1300"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
