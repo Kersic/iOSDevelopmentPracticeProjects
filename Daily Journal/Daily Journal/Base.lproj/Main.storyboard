@@ -35,7 +35,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="I07-6L-Skg"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="jf6-d8-A9Q">
                             <connections>
-                                <segue destination="vQS-Ke-qza" kind="show" id="9ks-YA-6ys"/>
+                                <segue destination="vQS-Ke-qza" kind="show" identifier="segueToEntry" id="9ks-YA-6ys"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -77,7 +77,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tEV-Hm-m3p">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="trash" id="tzU-wa-gOu"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="trash" id="tzU-wa-gOu">
+                            <connections>
+                                <action selector="deleteEntry:" destination="vQS-Ke-qza" id="6Am-lf-DIn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="mw8-t3-hQd" id="ymf-ix-KQj"/>
