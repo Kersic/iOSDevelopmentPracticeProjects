@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W7k-Rg-PGA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Novice-->
+        <scene sceneID="sdf-i8-gIN">
+            <objects>
+                <viewController id="vUB-Rf-k9g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1kh-f2-UTC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-mn-ooZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1029"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-S3-XvR" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1029"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.10.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M8-wg-7dL">
+                                                <rect key="frame" x="20" y="186" width="83" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vedno okusne jedi z jabolki v glavni vlogi" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C81-Ba-hak">
+                                                <rect key="frame" x="20" y="227" width="324" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-10-22 at 10.47.19" translatesAutoresizingMaskIntoConstraints="NO" id="Vxj-UR-p1c">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vxj-UR-p1c" secondAttribute="height" multiplier="207:83" id="4f2-kp-555"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGn-E5-pXB">
+                                                <rect key="frame" x="20" y="293.5" width="374" height="718"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. \n \n Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  egum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  egum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pazecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  egum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="labelColor"/>
+                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DGn-E5-pXB" secondAttribute="trailing" constant="20" id="3XM-Ie-648"/>
+                                            <constraint firstAttribute="trailing" secondItem="C81-Ba-hak" secondAttribute="trailing" constant="70" id="8Rn-4G-18j"/>
+                                            <constraint firstItem="Vxj-UR-p1c" firstAttribute="top" secondItem="Xoz-S3-XvR" secondAttribute="top" id="9LO-m8-Bj3"/>
+                                            <constraint firstItem="C81-Ba-hak" firstAttribute="leading" secondItem="Xoz-S3-XvR" secondAttribute="leading" constant="20" id="CbD-sD-ucK"/>
+                                            <constraint firstItem="Vxj-UR-p1c" firstAttribute="leading" secondItem="Xoz-S3-XvR" secondAttribute="leading" id="EXz-j6-hXS"/>
+                                            <constraint firstItem="DGn-E5-pXB" firstAttribute="leading" secondItem="Xoz-S3-XvR" secondAttribute="leading" constant="20" id="Gb9-Em-hBz"/>
+                                            <constraint firstItem="4M8-wg-7dL" firstAttribute="leading" secondItem="Xoz-S3-XvR" secondAttribute="leading" constant="20" id="JpI-Lo-lIZ"/>
+                                            <constraint firstItem="4M8-wg-7dL" firstAttribute="top" secondItem="Vxj-UR-p1c" secondAttribute="bottom" constant="20" id="PTX-72-d8s"/>
+                                            <constraint firstItem="DGn-E5-pXB" firstAttribute="top" secondItem="C81-Ba-hak" secondAttribute="bottom" constant="20" id="S4c-vx-hxY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vxj-UR-p1c" secondAttribute="trailing" id="aDq-cB-wgc"/>
+                                            <constraint firstAttribute="bottom" secondItem="DGn-E5-pXB" secondAttribute="bottom" constant="17.5" id="hVu-5p-xjR"/>
+                                            <constraint firstItem="C81-Ba-hak" firstAttribute="top" secondItem="4M8-wg-7dL" secondAttribute="bottom" constant="20" id="z1o-41-KOH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xoz-S3-XvR" firstAttribute="width" secondItem="c3h-mn-ooZ" secondAttribute="width" id="5Am-O1-NTY"/>
+                                    <constraint firstItem="Xoz-S3-XvR" firstAttribute="height" secondItem="c3h-mn-ooZ" secondAttribute="height" priority="250" id="5bP-kR-2NR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xoz-S3-XvR" secondAttribute="trailing" id="Cpd-AT-zsc"/>
+                                    <constraint firstItem="Xoz-S3-XvR" firstAttribute="top" secondItem="c3h-mn-ooZ" secondAttribute="top" id="Fld-uM-Xyo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xoz-S3-XvR" secondAttribute="bottom" id="Pgj-y6-klM"/>
+                                    <constraint firstItem="Xoz-S3-XvR" firstAttribute="leading" secondItem="c3h-mn-ooZ" secondAttribute="leading" id="tDM-JS-trc"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="HnO-zM-MHh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ZEg-ZV-IDA"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S1p-2r-EDH"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S1p-2r-EDH" firstAttribute="bottom" secondItem="c3h-mn-ooZ" secondAttribute="bottom" id="3MU-sY-Odd"/>
+                            <constraint firstItem="c3h-mn-ooZ" firstAttribute="leading" secondItem="S1p-2r-EDH" secondAttribute="leading" id="8aa-ej-9lX"/>
+                            <constraint firstItem="c3h-mn-ooZ" firstAttribute="top" secondItem="S1p-2r-EDH" secondAttribute="top" id="HEz-2E-hKD"/>
+                            <constraint firstItem="S1p-2r-EDH" firstAttribute="trailing" secondItem="c3h-mn-ooZ" secondAttribute="trailing" id="W41-61-FDU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Novice" id="U6Q-Pg-DYo">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="M6Q-Xy-86K"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="11i-M8-QBN">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udo-JX-Oqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1201.449275362319" y="701.78571428571422"/>
+        </scene>
+        <!--Moj Spar-->
+        <scene sceneID="puu-lX-csp">
+            <objects>
+                <viewController id="aEb-Wg-avU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Moj Spar" image="spar" id="jEv-lT-U5n">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="8"/>
+                        <color key="badgeColor" systemColor="systemBackgroundColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rd6-Q8-3hu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349" y="603"/>
+        </scene>
+        <!--Nakupovalni listki-->
+        <scene sceneID="FZG-lc-cW7">
+            <objects>
+                <viewController id="HtE-ST-U5J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4iy-A9-iPL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fyq-uk-cph"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nakupovalni listki" image="shoppingList" id="8BT-V4-peK">
+                        <inset key="imageInsets" minX="0.0" minY="11" maxX="0.0" maxY="10"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIG-C9-wtl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="601"/>
+        </scene>
+        <!--Novice-->
+        <scene sceneID="kNt-tV-skK">
+            <objects>
+                <tabBarController title="Novice" id="W7k-Rg-PGA" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oxd-uC-pix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.036199679569999997" green="0.57786188469999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HuB-Sz-fsm" kind="relationship" relationship="viewControllers" id="kRF-st-RYp"/>
+                        <segue destination="aEb-Wg-avU" kind="relationship" relationship="viewControllers" id="8KB-bI-61P"/>
+                        <segue destination="HtE-ST-U5J" kind="relationship" relationship="viewControllers" id="3Qj-5M-ewx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deR-x2-ThY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-968" y="-145"/>
+        </scene>
+        <!--Aktualno-->
+        <scene sceneID="ceq-mU-282">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HuB-Sz-fsm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Aktualno" image="book.fill" catalog="system" id="vh0-8i-chV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c2I-Zc-15w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vUB-Rf-k9g" kind="relationship" relationship="rootViewController" id="kNx-0I-iE1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FeA-6a-BFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2010" y="602"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screenshot 2020-10-22 at 10.47.19" width="1692" height="676"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="shoppingList" width="50" height="53"/>
+        <image name="spar" width="57" height="50"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
